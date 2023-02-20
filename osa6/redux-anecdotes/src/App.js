@@ -5,6 +5,8 @@ import AnectodeList from './components/anecdoteList'
 import Filter from './components/Filter'
 import Notification from './components/Notification'
 import { initializeAnecdotes } from './reducers/anecdoteReducer'
+import { useQuery } from 'react-query'
+import axios from 'axios'
 
 const App = () => {
   const dispatch = useDispatch()
